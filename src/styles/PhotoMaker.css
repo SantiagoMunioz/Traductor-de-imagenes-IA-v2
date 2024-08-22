@@ -1,0 +1,132 @@
+@keyframes showingItems {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+.photoCont{
+    transition: 1s;
+    padding: 2%;
+    min-height: 320px;
+    height: 400px;
+    max-height: 60%;
+    max-width: 100%;
+    width: 100%;
+    min-width: 300px;
+    background: rgba(250, 250, 250, .5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.photoCont:hover{
+    background: rgba(250, 250, 250, .2);
+    border: 1px solid white;
+    box-shadow: 0px 0px 30px white;
+}
+
+.photoCont .err{
+    min-width: 90%;
+    height: 90%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.photoCont .err .selDev{
+    height: 7%;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.photoCont.err .selDev option{
+    color: white;
+    background: grey;
+}
+
+.photoCont .err .videoCont{
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+.photoCont .err .videoCont::-webkit-scrollbar{
+    display: block;
+}
+
+.photoCont .err .videoCont::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.photoCont .err .videoCont:hover::-webkit-scrollbar-thumb{
+    background: rgba(160, 160, 160);
+}
+
+.photoCont .err .videoCont::-webkit-scrollbar-thumb:hover{
+    background: rgba(120, 230, 250);
+}
+
+.photoCont .err .videoCont video{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid transparent;
+}
+
+.photoCont .err .videoCont .tkPhoto{
+    padding: 1%;
+    min-width: 30%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.photoCont .err .videoCont .tkPhoto:hover{
+    color: rgba(120, 230, 250);
+    background: rgba(120, 230, 250, .3);
+    box-shadow: 0px 0px 30px rgba(120, 230, 250);
+    border-color: rgba(120, 230, 250);
+}
+
+.photoCont .err .videoCont .photoCanv{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background: transparent;
+}
+
+.photoCont .err .error .reload{
+    background: transparent;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 200%;
+}
+
+.photoCont .err .error .reload:hover{
+    background: rgba(120, 230, 250, .3);
+    box-shadow: 0px 0px 30px rgba(120, 230, 250);
+    border-color: rgba(120, 230, 250);
+}

@@ -1,0 +1,37 @@
+.photoImageCont{
+    transition: 1s;
+    padding: 1%;
+    min-height: 320px;
+    height: 400px;
+    max-height: 60%;
+    max-width: 55%;
+    width: 41%;
+    min-width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    overflow: scroll;
+    gap: 2%;
+}
+
+.photoImageCont:hover{
+    background: rgba(250, 250, 250, .2);
+    border: 1px solid white;
+    box-shadow: 0px 0px 30px white;
+}
+
+.photoImageCont .changeButton{
+    padding: 1%;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.photoImageCont .changeButton:hover{
+    box-shadow: 0 0 10px black;
+}

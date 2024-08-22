@@ -1,0 +1,98 @@
+@keyframes showingItems {
+  from { opacity: 0%; }
+  to { opacity: 100%; }
+}
+
+@keyframes rotary {
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+
+.controlCont{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-weight: bolder;
+  transition: 1.5s;
+  cursor: pointer;
+  &:hover,
+  &.clicked{
+    .iconControl{
+      animation: rotary 2s linear;
+    }
+    .compCont{ display: flex; }
+  }
+  .compCont{
+    backdrop-filter: blur(10px);
+    z-index: 4;
+    display: none;
+    position: fixed;
+    top: 20vh;
+    right: 0;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 1.5s;
+    padding: 2%;
+    animation: showingItems 4s;
+    flex-wrap: wrap;
+    min-width: 350px;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    .secTitle{
+      width: 100%;
+      height: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: left;
+      justify-content: center;
+      text-align: center;
+      .cTitle{
+        width: 100%;
+      }
+    }
+    .finalSec{
+      padding: 1%;
+      font-size: .7rem;
+      width: 100%;
+      height: 50px;
+      justify-content: center;
+      margin-bottom: 0;
+      .selControl{
+        border: 2px solid white;
+        border-radius: 5px;
+        background: transparent;
+        color: white;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+    .secTheme{
+      width: 100%;
+      height: 50px;
+      border: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .selControl{
+        border: 2px solid white;
+        background: transparent;
+        color: white;
+        text-transform: capitalize;
+        cursor: pointer;
+        border-radius: 5px;
+        height: 25px;
+        outline: none;
+      }
+      .themeSelected{
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}

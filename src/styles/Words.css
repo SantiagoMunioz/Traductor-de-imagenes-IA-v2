@@ -1,0 +1,117 @@
+@keyframes showingItems {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+@keyframes rotating {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.wordsCont{
+    transition: 1s;
+    padding: 2%;
+    min-height: 320px;
+    height: 600px;
+    min-width: 300px;
+    width: 80%;
+    background: rgba(250, 250, 250, .5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+.wordsCont:hover{
+    background: rgba(250, 250, 250, .2);
+    border: 1px solid white;
+    box-shadow: 0px 0px 30px white;
+}
+
+.wordsCont .wTrSect{
+    display: flex;
+    height: 90%;
+    min-width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wordsCont .wTrSect .trArea{
+    padding: 1%;
+    width: 90%;
+    height: 40%;
+    resize: none;
+    overflow: hidden;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    text-wrap: wrap;
+    font-size: .9rem;
+}
+
+.wordsCont .wTrSect .trArea::placeholder{
+    color: black;
+    text-shadow: 0 0 5px white;
+}
+
+.wordsCont .wTrSect .trArea:focus{
+    border-color:rgba(120, 230, 250);
+}
+
+.wordsCont .wTrSect .trArea:hover{
+    border-color:rgba(120, 230, 250);
+}
+
+.wordsCont .wTrSect .wBtn{
+    width: 20%;
+    padding: 1%;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.wordsCont .wTrSect .wBtn:hover{
+    color: rgba(120, 230, 250);
+    border-color: rgba(120, 230, 250);
+}
+
+.wordsCont .wTrSect .translating{
+    font-size: .7rem;
+    animation: rotating 2s infinite;
+}
+
+.wordsCont .wTrSect .selLang{
+    font-size: 1rem;
+}
+
+.wordsCont .wTrSect select{
+    padding: 1%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.wordsCont .wTrSect select:hover{
+    border-color: rgba(120, 230, 250);
+    color: rgba(120, 230, 250);
+}
+
+.wordsCont .wTrSect select option{
+    background: grey;
+    color: white;
+}

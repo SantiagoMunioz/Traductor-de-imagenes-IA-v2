@@ -1,0 +1,28 @@
+@keyframes colors {
+    0%{ filter: drop-shadow(0 0 10px black); }
+    25%{ filter: drop-shadow(0 0 20px rgba(121, 0, 177)); }
+    50%{ filter: drop-shadow(0 0 30px rgba(120, 230, 250)); }
+    75%{ filter: drop-shadow(0 0 20px rgba(121, 0, 177)); }
+    100%{ filter: drop-shadow(0 0 10px black); }
+}
+
+.barCont{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    border-radius: 20px;
+    background: transparent;
+}
+
+.progressBar{
+    width: 100%;
+    animation: colors 6s infinite;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

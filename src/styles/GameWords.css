@@ -1,0 +1,175 @@
+.wordsGameCont{
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    gap: 2%;
+    background: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.wordsGameCont .gameTitle{
+    height: 100px;
+    width: 90%;
+    text-align: center;
+}
+
+.wordsGameCont .closeButton{
+    transition: 1s;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wordsGameCont .closeButton:hover{
+    background: red;
+    box-shadow: 0 0 10px red;
+    border-color: red;
+}
+
+.wordsGameCont .gameSect{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 1%;
+    overflow: scroll;
+}
+
+.wordsGameCont .gameSect::-webkit-scrollbar{
+    display: block;
+}
+
+.wordsGameCont .gameSect::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.wordsGameCont .gameSect:hover::-webkit-scrollbar-thumb{
+    background: rgba(160, 160, 160);
+}
+
+.wordsGameCont .gameSect::-webkit-scrollbar-thumb:hover{
+    background: rgba(120, 230, 250);
+}
+
+.wordsGameCont .gameSect *{
+    font-weight: bold;
+}
+
+.wordsGameCont .gameSect .scoreCounter,
+.wordsGameCont .gameSect .lifeCounter{
+    width: 100%;
+    text-align: center;
+}
+
+.wordsGameCont .gameSect .txtAreaGame{
+    width: 200px;
+    height: 100px;
+    font-weight: bold;
+}
+
+.wordsGameCont .gameSect .txtAreaGame{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.wordsGameCont .gameSect .txtAreaGame,
+.wordsGameCont .gameSect .answerSect .textAnswer{
+    border-radius: 10px;
+    text-align: center;
+    resize: none;
+    outline: none;
+}
+
+.wordsGameCont .gameSect .answerSect{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 80%;
+    padding: 2%;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wordsGameCont .gameSect .answerSect .answerTitle{
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+}
+
+.wordsGameCont .gameSect .answerSect .textAnswer{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.wordsGameCont .gameSect .answerSect .textAnswer,
+.wordsGameCont .gameSect .answerSect .playButton{
+    height: 50px;
+    width: 50px;
+}
+
+.wordsGameCont .gameSect .answerSect .playButton{
+    outline: none;
+    background: rgba(50, 150, 180);
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.wordsGameCont .gameSect .answerSect .playButton:hover{
+    box-shadow: 0 0 10px rgba(120, 230, 250);
+    background: rgba(120, 230, 250);
+    color: black;
+}
+
+.wordsGameCont .gameSect .answerSect .reloadLabel{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wordsGameCont .gameSect .answerSect .reloadButton{
+    height: 50px;
+    width: 100px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.wordsGameCont .gameSect .answerSect .reloadButton:hover{
+    background: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+}

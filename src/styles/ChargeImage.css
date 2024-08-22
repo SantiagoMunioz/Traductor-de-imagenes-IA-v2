@@ -1,0 +1,82 @@
+@keyframes showingItems {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+.imageCont{
+    padding: 1%;
+    transition: 1s;
+    min-height: 320px;
+    height: 400px;
+    max-width: 45%;
+    width: 20%;
+    min-width: 300px;
+    background: rgba(250, 250, 250, .5);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.imageCont label{
+    text-align: center;
+}
+
+.imageCont:hover{
+    background: rgba(250, 250, 250, .2);
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px white;
+}
+
+.imageCont .selCategorie{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.imageCont .selCategorie::-webkit-scrollbar{
+    display: block;
+}
+
+.imageCont .selCategorie::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.imageCont .selCategorie:hover::-webkit-scrollbar-thumb{
+    background: rgba(160, 160, 160);
+}
+
+.imageCont .selCategorie::-webkit-scrollbar-thumb:hover{
+    background: rgba(120, 230, 250);
+}
+
+.imageCont .selCategorie .categorieSel{
+    padding: 1%;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.imageCont .selCategorie .categorieSel:hover{
+    border-color: rgba(120, 230, 250);
+    color: rgba(120, 230, 250);
+}
+
+.imageCont .selCategorie .categorieSel option{
+    padding: 1%;
+    background: grey;
+    color: white;
+    cursor: pointer;
+}

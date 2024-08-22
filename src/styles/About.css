@@ -1,0 +1,16 @@
+.aboutCont{
+  width: 80%;
+  height: 20%;
+  padding: 2%;
+  justify-content: center;
+  .aboutButton{
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: rgba(120, 230, 250);
+    &:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

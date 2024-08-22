@@ -1,0 +1,42 @@
+.catImgSel{
+    padding: 1%;
+    background: transparent;
+    color: white;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.catImgSel label{
+    text-align: center;
+}
+
+.catImgSel .chImLsCtSl{
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.catImgSel .chImLsCtSl:hover{
+    border-color: rgba(120, 230, 250);
+    color: rgba(120, 230, 250);
+}
+
+.catImgSel .chImLsCtSl option{
+    background: grey;
+    color: white;
+}
+
+.catImgSel .imgSel{
+    padding: 2%;
+    width: 100%;
+}

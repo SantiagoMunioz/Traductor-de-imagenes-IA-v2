@@ -1,0 +1,36 @@
+Esta App está creada para el aprendizaje de idiomas, con fines educativos.
+
+El funcionamiento de la App consta de la traducción de palabras, además de contar con una IA que identifica imágenes, proporcionando la traducción de lo encontrado en la misma.
+
+La App cuenta con imágenes precargadas por categorías y la posibilidad de tomar fotos.
+
+Recomendaciones:
+
+→ Recuerda no usar lenguaje vulgar.
+→ Las traducción de las fotos depende de la resolución de las mismas.
+
+Motivo de desarrollo:
+
+→ Trabajo de grado, Instituto Tecnológico del Putumayo (ITP).
+
+Creado por:
+
+→ Santiago Felipe Muñoz Ordoñez.
+
+Asesorado por:
+
+→ Jhon Henry Cuellar Portilla.
+
+Jurado calificador:
+
+→ Jhoni Ricardo Cerón Chavez.
+
+Creado con:
+
+→ TensorFlow.
+→ React.js.
+→ Python.
+
+Traducido con:
+	
+→ RapidAPI: MyMemory - Translation Memory.

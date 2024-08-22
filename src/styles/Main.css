@@ -1,0 +1,49 @@
+.mainCont{
+  padding-top: 120px;
+  background: transparent;
+  background-repeat: repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  .sect{
+    height: 200px;
+    max-height: 350px;
+    width: 60%;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 20px;
+    transition: 1.5s;
+    &:hover{ box-shadow: 0 0 30px white; }
+    .sectText{
+      width: 60%;
+      height: 170px;
+      overflow: auto;
+    }
+    .btnLink{
+      width: 30%;
+      min-width: 100px;
+      overflow: hidden;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid;
+      border-radius: 20px;
+      background: transparent;
+      transition: 1.5s;
+      font-weight: bolder;
+      &:hover{
+        text-shadow: 0 0 20px white;
+        background: rgba(0, 0, 0, .3);
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.translation{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-wrap: wrap;
+}
+
+.translation .trasnWord{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-align: center;
+}

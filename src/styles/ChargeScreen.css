@@ -1,0 +1,60 @@
+@keyframes aroundTheWorld {
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+.chargeScreenCont{
+    transition: 2s;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    min-height: 90%;
+    min-width: 320px;
+    background: rgba(20, 20, 20, .9);
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    z-index: 2;
+}
+
+.chargeScreenCont .loader1,
+.chargeScreenCont .loader2,
+.chargeScreenCont .loader3{
+    position: absolute;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.chargeScreenCont .loader1{
+    animation: aroundTheWorld 7s linear infinite;
+    border: 10px solid white;
+    border-radius: 50% 25% 50% 25%;
+    filter: drop-shadow(0 0 20px white);
+}
+
+.chargeScreenCont .loader2{
+    animation: aroundTheWorld 2s linear infinite;
+    border: 5px solid rgba(120, 230, 250, .9);
+    border-radius: 30% 60% / 60% 60% 30% 30%;
+    filter: drop-shadow(0 0 20px rgba(120, 230, 250, .9));
+}
+
+.chargeScreenCont .loader3{
+    animation: aroundTheWorld 3s linear infinite;
+    border: 5px solid aquamarine;
+    border-radius: 25% 50% / 45% 50% 60% 70%;
+    filter: drop-shadow(0 0 20px aquamarine);
+}
+
+.chargeScreenCont .chargeText{
+    color: white;
+    font-size: 2rem;
+}
+
+.chargeScreenCont:hover .chargeText{
+    text-shadow: 0px 0px 10px white;
+}
