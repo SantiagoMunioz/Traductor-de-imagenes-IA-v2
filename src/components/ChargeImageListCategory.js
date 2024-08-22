@@ -1,14 +1,14 @@
 import React, { useContext, useRef, useState } from "react";
-import { ImageData } from "../data-bases/ImageData";
-import { ChargeImageId } from "./ChargeImageId";
-import "../styles/ChargeImageListCategorie.css";
 import LanguageContext from "../context/LanguageContext";
 import ThemeContext from "../context/ThemeContext";
+import { ImageData } from "../data-bases/ImageData";
+import "../styles/ChargeImageListCategory.css";
+import { ChargeImageId } from "./ChargeImageId";
 
-export const ChargeImageListCategorie = ({categorie}) => {
+export const ChargeImageListCategory = ({category}) => {
     const {texts} = useContext(LanguageContext);
     const {themeConfig} = useContext(ThemeContext);
-    const cateImg = ImageData.filter( image => image.categorie === categorie );
+    const cateImg = ImageData.filter( image => image.category === category );
     const selImgRef = useRef(null);
     const [idSel, setIdSel] = useState("");
 
@@ -36,7 +36,7 @@ export const ChargeImageListCategorie = ({categorie}) => {
                     </option>
                 ))}
             </select>
-            { idSel && < ChargeImageId categorie={categorie} imageId={idSel} /> }
+            { idSel && < ChargeImageId category={category} imageId={idSel} /> }
         </div>
     );
 };
