@@ -1,34 +1,22 @@
 This App was created for language learning only, for educational purposes.
 
-The operation of the App consists of translation of words, in addition to having an IA that identifies images, providing the translation of image content.
+The operation of the App consists of translation of words, in addition to having a TensorFlow IA that identifies images, providing the translation of image content.
 
 The App has preloaded images by categories and the possibility of taking photos.
 
 Recomendations:
+
 → Remember to not use vulgar language.
 → The photo traslation depends of the resolution of themself.
-
-Development reason:
-
-→ Degree work, Putumayo Tecnologic Institute (ITP).
 
 Created by:
 
 → Santiago Felipe Muñoz Ordoñez.
 
-Advised by:
-
-→ Jhon Henry Cuellar Portilla.
-
-Qualifying jury:
-
-→ Jhoni Ricardo Cerón Chavez.
-
 Created with:
 
 → TensorFlow
 → React.js
-→ Python
 
 Translated with:
 	
