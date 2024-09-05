@@ -32,7 +32,7 @@
     box-shadow: 0px 0px 30px white;
 }
 
-.imageCont .selCategorie{
+.imageCont .selCategory{
     width: 90%;
     height: 90%;
     display: flex;
@@ -43,23 +43,23 @@
     border-radius: 20px;
 }
 
-.imageCont .selCategorie::-webkit-scrollbar{
+.imageCont .selCategory::-webkit-scrollbar{
     display: block;
 }
 
-.imageCont .selCategorie::-webkit-scrollbar-thumb{
+.imageCont .selCategory::-webkit-scrollbar-thumb{
     background: transparent;
 }
 
-.imageCont .selCategorie:hover::-webkit-scrollbar-thumb{
+.imageCont .selCategory:hover::-webkit-scrollbar-thumb{
     background: rgba(160, 160, 160);
 }
 
-.imageCont .selCategorie::-webkit-scrollbar-thumb:hover{
+.imageCont .selCategory::-webkit-scrollbar-thumb:hover{
     background: rgba(120, 230, 250);
 }
 
-.imageCont .selCategorie .categorieSel{
+.imageCont .selCategory .categorySel{
     padding: 1%;
     border: 2px solid white;
     border-radius: 5px;
@@ -69,12 +69,12 @@
     cursor: pointer;
 }
 
-.imageCont .selCategorie .categorieSel:hover{
+.imageCont .selCategory .categorySel:hover{
     border-color: rgba(120, 230, 250);
     color: rgba(120, 230, 250);
 }
 
-.imageCont .selCategorie .categorieSel option{
+.imageCont .selCategory .categorySel option{
     padding: 1%;
     background: grey;
     color: white;
